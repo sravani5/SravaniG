@@ -42,7 +42,7 @@
 						icon="sap-icon://download"
 						type="Emphasized"
 						 text="Download Resume"
-						press="onDownloadResumeButtonPress"
+						press="onDownloadPDF"
 					/>
 				</actions>
            	</ObjectPageDynamicHeaderTitle>

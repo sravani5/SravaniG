@@ -56,7 +56,18 @@ sap.ui.define([
         });
         this.getView().setModel(oModel);
       },
+    onDownloadPDF: function() {
+    // Path to your PDF in the app folder
+    var pdfPath = "/utils/Sravani_Ganta_Fiori_Resume.pdf"; 
     
+    // Create a hidden anchor element
+    var link = document.createElement("a");
+    link.href = pdfPath;
+    link.download = "Sravani_Fiori_Resume.pdf";  // Name for downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+},
       onDownloadResumeButtonPress: function () {
         const pdfData = this.getView().getModel().getProperty("/pdfBase64");
 
