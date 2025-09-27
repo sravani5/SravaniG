@@ -57,20 +57,27 @@ sap.ui.define([
         this.getView().setModel(oModel);
       },
     onDownloadPDF: function() {
-      // Raw GitHub URL to your PDF
-    var pdfUrl = "https://raw.githubusercontent.com/sravani5/SravaniG/main/webapp/utils/Sravani_Ganta_Fiori_Resume.pdf";
-
-    // Create a temporary invisible link element
-    var link = document.createElement("a");
-    link.href = pdfUrl;
-
-    // The name the downloaded file will have
+      fetch("https://raw.githubusercontent.com/sravani5/SravaniG/main/webapp/utils/Sravani_Ganta_Fiori_Resume.pdf")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was not OK");
+    }
+    return response.blob(); // Read response as Blob
+  })
+  .then(blob => {
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
     link.download = "Sravani_Ganta_Fiori_Resume.pdf";
-
-    // Append to body, click it, then remove it
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  })
+  .catch(error => {
+    console.error("Download failed:", error);
+  });
+
 },
       onDownloadResumeButtonPress: function () {
         const pdfData = this.getView().getModel().getProperty("/pdfBase64");
