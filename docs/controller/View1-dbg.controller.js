@@ -57,16 +57,27 @@ sap.ui.define([
         this.getView().setModel(oModel);
       },
     onDownloadPDF: function() {
-    // Path to your PDF in the app folder
-    var pdfPath = "/utils/Sravani_Ganta_Fiori_Resume.pdf"; 
-    
-    // Create a hidden anchor element
-    var link = document.createElement("a");
-    link.href = pdfPath;
-    link.download = "Sravani_Fiori_Resume.pdf";  // Name for downloaded file
+      fetch("https://raw.githubusercontent.com/sravani5/SravaniG/main/webapp/utils/Sravani_Ganta_Fiori_Resume.pdf")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was not OK");
+    }
+    return response.blob(); // Read response as Blob
+  })
+  .then(blob => {
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "Sravani_Ganta_Fiori_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  })
+  .catch(error => {
+    console.error("Download failed:", error);
+  });
+
 },
       onDownloadResumeButtonPress: function () {
         const pdfData = this.getView().getModel().getProperty("/pdfBase64");
