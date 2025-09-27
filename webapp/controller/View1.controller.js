@@ -57,13 +57,17 @@ sap.ui.define([
         this.getView().setModel(oModel);
       },
     onDownloadPDF: function() {
-    // Path to your PDF in the app folder
-    var pdfPath = "/utils/Sravani_Ganta_Fiori_Resume.pdf"; 
-    
-    // Create a hidden anchor element
+      // Raw GitHub URL to your PDF
+    var pdfUrl = "https://raw.githubusercontent.com/sravani5/SravaniG/main/webapp/utils/Sravani_Ganta_Fiori_Resume.pdf";
+
+    // Create a temporary invisible link element
     var link = document.createElement("a");
-    link.href = pdfPath;
-    link.download = "Sravani_Fiori_Resume.pdf";  // Name for downloaded file
+    link.href = pdfUrl;
+
+    // The name the downloaded file will have
+    link.download = "Sravani_Ganta_Fiori_Resume.pdf";
+
+    // Append to body, click it, then remove it
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
