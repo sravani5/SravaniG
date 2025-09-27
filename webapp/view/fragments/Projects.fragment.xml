@@ -1,0 +1,80 @@
+<c:FragmentDefinition
+    xmlns="sap.uxap"
+    xmlns:c="sap.ui.core"
+    xmlns:m="sap.m"
+    xmlns:l="sap.ui.layout.form"
+>
+    <ObjectPageSection id="_IDGenObjectPageSec1"
+        titleUppercase="false"
+        title="Projects"
+        importance="Medium"
+    >
+        <subSections>
+            <!-- Project 1 -->
+            <ObjectPageSubSection id="_IDGenObjectPageSubSec"
+             mode="Expanded"
+             class="title-word-wrap"
+                title="Manual Exception"
+                titleUppercase="false"
+            >
+                <blocks>
+                    <l:SimpleForm id="_IDGenSimpleFrm"
+                        layout="ResponsiveGridLayout"
+                        editable="false"
+                    >
+                      
+                        <m:Label id="_IDGenLabelRole" wrapping="true" text="Role" />
+                        <m:Text id="_IDGenTxt" wrapping="true" text="SAP BTP CAPM UI5/Fiori Consultant" />
+                        <m:Label id="_IDGenLabelll" wrapping="true" text="Tools &#38; Technology" />
+                        <m:Text id="_IDGenTexttt" wrapping="true" text="SAP UI5/Fiori" />
+                        <m:Label id="_IDGenLabell" wrapping="true" text="Roles &#38; Responsibilities" />
+                        <m:FormattedText id="_IDGenFormattedText" htmlText="{/project1roles}" />
+                    </l:SimpleForm>
+                </blocks>
+            </ObjectPageSubSection>
+            <ObjectPageSubSection id="_IDGenObjectPageSubSec1"
+             mode="Expanded"
+                title="Biller Worklist"
+                titleUppercase="false"
+            >
+                <blocks>
+                    <l:SimpleForm id="_IDGenSimpleFrm1"
+                        layout="ResponsiveGridLayout"
+                        editable="false"
+                    >
+                       
+                        <m:Label id="_IDGenLabl5" wrapping="true" text="Role" />
+                        <m:Text id="_IDGenTxt4" wrapping="true" text="SAP UI5/Fiori Consultant" />
+                        <m:Label id="_IDGenLabl6" wrapping="true" text="Tools &#38; Technology" />
+                        <m:Text id="_IDGenTxt5" wrapping="true" text="SAP UI5/Fiori"/>
+                        <m:Label id="_IDGenLbl7" wrapping="true" text="Roles &#38; Responsibilities" />
+                        <m:FormattedText id="_IDGenFormattedText1" htmlText="{/project2roles}" />
+                    </l:SimpleForm>
+                </blocks>
+            </ObjectPageSubSection>
+            <ObjectPageSubSection id="_IDGenObjectPageSubSec2"
+             mode="Expanded"
+                title="Record Management"
+                titleUppercase="false"
+            >
+                <blocks>
+                    <l:SimpleForm id="_IDGenSimpleFrm2"
+                        layout="ResponsiveGridLayout"
+                        editable="false"
+                    >
+                      
+                        <m:Label id="_IDGenLbl9" wrapping="true" text="Role" />
+                        <m:Text id="_IDGenTxt7" wrapping="true" text="Sap UI5/Fiori Consultant" />
+                        <m:Label id="_IDGenLbl10" wrapping="true" text="Tools &#38; Technology" />
+                        <m:Text id="_IDGenTxt8" wrapping="true" text="SAP UI5/Fiori" />
+                        <m:Label id="_IDGenLbel11" wrapping="true" text="Roles &#38; Responsibilities" />
+                        <m:FormattedText id="_IDGenFormattedText2" htmlText="{/project3roles}" />
+                    </l:SimpleForm>
+                </blocks>
+            </ObjectPageSubSection>
+           
+            
+           
+        </subSections>
+    </ObjectPageSection>
+</c:FragmentDefinition>
