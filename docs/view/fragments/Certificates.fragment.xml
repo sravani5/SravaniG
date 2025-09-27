@@ -1,0 +1,82 @@
+<c:FragmentDefinition
+    xmlns="sap.uxap"
+    xmlns:c="sap.ui.core"
+    xmlns:m="sap.m"
+>
+    <ObjectPageSection id="_IDGenObjectPageSection4"
+    
+        titleUppercase="false"
+        title="Skills"
+        importance="Medium"
+    >
+        <subSections>
+            <ObjectPageSubSection id="_IDGenObjectPageSubSection10"
+             mode="Expanded"
+                title="Certifications"
+                titleUppercase="false"
+            >
+                <blocks>
+                    <m:List id="_IDGenList2">
+                        <m:CustomListItem id="_IDGenCustomListItem">
+                            <m:HBox id="_IDGenHBox"
+                                alignItems="Center"
+                                justifyContent="SpaceBetween"
+                            >
+                                <m:HBox id="_IDGenHBox1" alignItems="Center">
+                                    <m:Image id="_IDGenImage2"
+                                        class="sapUiSmallMargin"
+                                        src="{/rootPath}/utils/fiori_cert.png"
+                                        width="110px"
+                                    />
+                                    <m:Text id="_IDGenText18"
+                                        wrapping="true" text="SAP Certified Development Associate - SAP Fiori Application Developer"
+                                        class="sapUiSmallMarginBegin"
+                                    />
+                                </m:HBox>
+                               
+                            </m:HBox>
+                        </m:CustomListItem>
+                        <m:CustomListItem id="_IDGenCustomListItem1">
+                            <m:HBox id="_IDGenHBox2"
+                                alignItems="Center"
+                                justifyContent="SpaceBetween"
+                            >
+                                <m:HBox id="_IDGenHBox3" alignItems="Center">
+                                    <m:Image id="_IDGenImage3"
+                                        class="sapUiSmallMargin"
+                                        src="{/rootPath}/utils/CAPM.png"
+                                        width="110px"
+                                    />
+                                    <m:Text id="_IDGenText19"
+                                        wrapping="true" text="SAP BTP Training from Basics to Advanced"
+                                        class="sapUiSmallMarginBegin"
+                                    />
+                                </m:HBox>
+                              
+                            </m:HBox>
+                        </m:CustomListItem>
+                        <m:CustomListItem id="_IDGenCustomListItem2">
+                            <m:HBox id="_IDGenHBox4"
+                                alignItems="Center"
+                                justifyContent="SpaceBetween"
+                            >
+                                <m:HBox id="_IDGenHBox5" alignItems="Center">
+                                    <m:Image id="_IDGenImage4"
+                                        class="sapUiSmallMargin"
+                                        src="{/rootPath}/utils/Sap Joule.jpg"
+                                        width="110px"
+                                    />
+                                    <m:Text id="_IDGenText20"
+                                        wrapping="true" text="Hands on SAP Build Code, Joule AI, Low Code No Code"
+                                        class="sapUiSmallMarginBegin"
+                                    />
+                                </m:HBox>
+                               
+                            </m:HBox>
+                        </m:CustomListItem>
+                    </m:List>
+                </blocks>
+            </ObjectPageSubSection>
+        </subSections>
+    </ObjectPageSection>
+</c:FragmentDefinition>

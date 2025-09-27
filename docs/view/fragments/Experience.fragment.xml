@@ -1,0 +1,80 @@
+<c:FragmentDefinition
+    xmlns="sap.uxap"
+    xmlns:c="sap.ui.core"
+    xmlns:m="sap.m"
+    xmlns:l="sap.ui.layout.form"
+>
+    <ObjectPageSection id="_IDGenObjectPageSection"
+        titleUppercase="false"
+        title="Professional Experience"
+        importance="Medium"
+    >
+        <subSections>
+            <ObjectPageSubSection id="_IDGenObjectPageSubSection1"
+             mode="Expanded"
+                title="IBM"
+                titleUppercase="false"
+            >
+                <blocks>
+                    <m:VBox id="_IDGenVBox1" class="sapUiMediumMargin">
+                        <l:SimpleForm id="_IDGenSimpleForm"
+                            layout="ResponsiveGridLayout"
+                            editable="false"
+                        >
+                            <m:Label id="_IDGenLabelOrg" wrapping="true" text="Organization" />
+                            <m:Text id="_IDGenText2" wrapping="true" text="IBM" />
+                            <m:Label id="_IDGenLabel5" wrapping="true" text="Duration" />
+                            <m:Text id="_IDGenText3" wrapping="true" text="August 2024 - Present" />
+                            <m:Label id="_IDGenLabel6" wrapping="true" text="Role" />
+                            <m:Text id="_IDGenText4" wrapping="true" text="Package UX Consultant" />
+                            <m:Label id="_IDGenLabel7" wrapping="true" text="Location" />
+                            <m:Text id="_IDGenText5" wrapping="true" text="Hyderabad" />
+                        </l:SimpleForm>
+                    </m:VBox>
+                </blocks>
+            </ObjectPageSubSection>
+            <ObjectPageSubSection id="_IDGenObjectPageSubSection2"  mode="Expanded"
+                title="ACCENTURE"
+                titleUppercase="false">
+                <blocks>
+                  <m:VBox id="_IDGenVBox2" class="sapUiMediumMargin">
+                        <l:SimpleForm id="_IDGenSimpleForm2" 
+                            layout="ResponsiveGridLayout"
+                            editable="false"
+                        >
+                            <m:Label id="_IDGenLabel4"  wrapping="true" text="Organization" />
+                            <m:Text id="_IDGenText6" wrapping="true" text="Accenture" />
+                            <m:Label id="_IDGenLabel8" wrapping="true" text="Duration" />
+                            <m:Text id="_IDGenText7"  wrapping="true" text="August 2021 - August 2024" />
+                            <m:Label id="_IDGenLabel9"  wrapping="true" text="Role" />
+                            <m:Text id="_IDGenText8"  wrapping="true" text="Package Application Developement Specialist" />
+                            <m:Label id="_IDGenLabel10"  wrapping="true" text="Location" />
+                            <m:Text id="_IDGenText9"  wrapping="true" text="Hyderabad" />
+                        </l:SimpleForm>
+                    </m:VBox>
+                </blocks>
+            </ObjectPageSubSection>
+             <ObjectPageSubSection id="_IDGenObjectPageSubSection3"  mode="Expanded"
+                title="FULCRUM GLOBAL TECHNOLOGIES"
+                titleUppercase="false">
+                <blocks>
+                  <m:VBox id="_IDGenVBox4" class="sapUiMediumMargin">
+                        <l:SimpleForm id="_IDGenSimpleForm1" 
+                            layout="ResponsiveGridLayout"
+                            editable="false"
+                        >
+                            <m:Label id="_IDGenLabel3"  wrapping="true" text="Organization" />
+                            <m:Text id="_IDGenText11"  wrapping="true" text="Fulcrum" />
+                            <m:Label id="_IDGenLabel11" wrapping="true" text="Duration" />
+                            <m:Text id="_IDGenText12"  wrapping="true" text="August 2018 - August 2021" />
+                            <m:Label id="_IDGenLabel12"  wrapping="true" text="Role" />
+                            <m:Text id="_IDGenText13"  wrapping="true" text="SAP UI5 Developer" />
+                            <m:Label id="_IDGenLabel13" wrapping="true" text="Location" />
+                            <m:Text id="_IDGenText14" wrapping="true" text="Hyderabad" />
+                        </l:SimpleForm>
+                    </m:VBox>
+                </blocks>
+            </ObjectPageSubSection>
+        </subSections>
+    </ObjectPageSection>
+</c:FragmentDefinition>

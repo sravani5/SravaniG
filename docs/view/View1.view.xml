@@ -1,0 +1,113 @@
+<mvc:View controllerName="project1.controller.View1"
+    xmlns="sap.uxap" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout"
+	height="100%">
+    <m:Page id="page">
+    <m:content>
+     <ObjectPageLayout id="_IDGenObjectPageLayout"
+		showTitleInHeaderContent="true"
+		showEditHeaderButton="false"
+		headerContentPinned="false"
+		upperCaseAnchorBar="false"
+     >
+     	<headerTitle>
+        	<ObjectPageDynamicHeaderTitle id="_IDGenObjectPageDynamicHeaderTitle1">
+				<expandedHeading>
+					<m:Title id="_IDGenTitle" text="Sravani Ganta" wrapping="true"/>
+				</expandedHeading>
+
+				<snappedHeading>
+					<m:FlexBox id="_IDGenFlexBox" fitContainer="true" alignItems="Center">
+						<!-- <m:Avatar id="_IDGenAvatar" src="./test-resources/sap/uxap/images/imageID_275314.png" class="sapUiTinyMarginEnd"/> -->
+						<m:Title id="_IDGenTitle1" text="Sravani Ganta" wrapping="true" />
+					</m:FlexBox>
+				</snappedHeading>
+
+				<expandedContent>
+					<m:Text id="_IDGenText" text="SAP FIORI Consultant "/>
+				</expandedContent>
+
+				<snappedContent>
+					<m:Text id="_IDGenText1" text="SAP FIORI Consultant"/>
+				</snappedContent>
+
+				<snappedTitleOnMobile>
+					<m:Title id="_IDGenTitle2" text="SAP FIORI Consultant"/>
+				</snappedTitleOnMobile>
+        	<actions>
+					
+					<m:Button id="_IDGenButton2"
+						icon="sap-icon://download"
+						type="Emphasized"
+						 text="Download Resume"
+						press="onDownloadResumeButtonPress"
+					/>
+				</actions>
+           	</ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+        	<headerContent>
+			<m:FlexBox id="_IDGenFlexBox1" wrap="Wrap" fitContainer="true" >
+				<m:Avatar id="_IDGenAvatar1" class="sapUiSmallMarginEnd" src="" displaySize="L" />
+
+				<layout:VerticalLayout id="_IDGenVerticalLayout1" class="sapUiSmallMarginBeginEnd">
+					<m:Link id="_IDGenLink" text="9666763293"/>
+					<m:Link id="_IDGenLink1" text="sravani.ganta555@gmail.com"/>
+				</layout:VerticalLayout>
+
+			
+				<layout:VerticalLayout id="_IDGenVerticalLayout2" class="sapUiSmallMarginBeginEnd">
+					<m:Label id="_IDGenLabel" text="Hello! I am Sravani SAP FIORI Consultant Extending Skills to SAP BTP CAPM"/>
+					
+				</layout:VerticalLayout>
+
+				<layout:VerticalLayout id="_IDGenVerticalLayout3" class="sapUiSmallMarginBeginEnd">
+					<m:Label id="_IDGenLabel2" text="Hyderabad, India"/>
+				</layout:VerticalLayout>
+			</m:FlexBox>
+		</headerContent>
+        <sections>
+			<ObjectPageSection id="_IDGenObjectPageSection1"
+				titleUppercase="false"
+				title="Profile Overview"
+			>
+				<subSections>
+					<ObjectPageSubSection id="_IDGenObjectPageSubSection">
+						<blocks>
+							<core:Fragment
+								fragmentName="project1.view.fragments.profileOverview"
+								type="XML"
+							/> 
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+				<core:Fragment
+				fragmentName="project1.view.fragments.Skills"
+				type="XML"
+			/>
+			<core:Fragment
+				fragmentName="project1.view.fragments.Experience"
+				type="XML"
+			/>
+		
+			
+			<core:Fragment
+				fragmentName="project1.view.fragments.Certificates"
+				type="XML"
+			/>
+			<core:Fragment
+				fragmentName="project1.view.fragments.Projects"
+				type="XML"
+			/>
+			<core:Fragment
+				fragmentName="project1.view.fragments.Education"
+				type="XML"
+			/>
+			
+		</sections>
+     </ObjectPageLayout>
+    </m:content>
+    </m:Page>
+</mvc:View>

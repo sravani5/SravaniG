@@ -1,0 +1,67 @@
+<c:FragmentDefinition
+    xmlns="sap.uxap"
+    xmlns:c="sap.ui.core"
+    xmlns:m="sap.m"
+>
+    <ObjectPageSection
+        id="_IDGenObjectPageSection3"
+        titleUppercase="false"
+        title="Skills"
+        importance="Medium"
+    >
+        <subSections>
+            <ObjectPageSubSection
+                id="_IDGenObjectPageSubSection4"
+                mode="Expanded"
+                title="SAP BTP"
+                titleUppercase="false"
+            >
+                <blocks>
+                    <m:List id="_IDGenList">
+                        <m:StandardListItem
+                            id="_IDGenStandardListItem"
+                            title="Fiori/UI5"
+                        />
+                        <m:StandardListItem
+                            id="_IDGenStandardListItem1"
+                            title="CAPM (Cloud Application Programming Model)"
+                        />
+                    </m:List>
+                </blocks>
+            </ObjectPageSubSection>
+            <ObjectPageSubSection
+                id="_IDGenObjectPageSubSection5"
+                title="Programming Languages"
+                titleUppercase="false"
+            >
+                <blocks>
+                    <m:List id="_IDGenList1">
+                        <m:StandardListItem
+                            id="_IDGenStandardListItem5"
+                            title="Basics of Python"
+                        />
+                    </m:List>
+                </blocks>
+            </ObjectPageSubSection>
+
+            <ObjectPageSubSection
+                id="_IDGenObjectPageSubSection7"
+                title="Tools"
+                titleUppercase="false"
+            >
+                <blocks>
+                    <m:List id="_IDGenList3">
+                        <m:StandardListItem
+                            id="_IDGenStandardListItem8"
+                            title="SAP WEBIDE FullStack"
+                        />
+                        <m:StandardListItem
+                            id="_IDGenStandardListItem9"
+                            title="Business Application Studio"
+                        />
+                    </m:List>
+                </blocks>
+            </ObjectPageSubSection>
+        </subSections>
+    </ObjectPageSection>
+</c:FragmentDefinition>
